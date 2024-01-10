@@ -8,7 +8,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(()=>{
-    fetch('https://dummy.restapiexample.com/api/v1/employees', 
+    fetch('https://dummy.restapiexample.com/api/v1/employees/', 
     {method: 'GET',
      mode : 'no-cors'})
     .then(response => response.json())
