@@ -10,7 +10,7 @@ function App() {
   useEffect(()=>{
     fetch('https://dummy.restapiexample.com/api/v1/employees', 
     {method: 'GET',
-     mode : 'no-cors'})
+     mode : 'cors'})
     .then(response => response.json())
     .then(json => setData(json))
     .catch(error => console.error(error));
