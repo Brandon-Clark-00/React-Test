@@ -8,7 +8,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(()=>{
-    fetch('http://192.168.1.41:5000/data', 
+    fetch('https://dummy.restapiexample.com/api/v1/employees', 
     {method: 'GET',
      mode : 'cors'})
     .then(response => response.json())
