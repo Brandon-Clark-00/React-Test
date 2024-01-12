@@ -8,9 +8,9 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(()=>{
-    fetch('https://dummy.restapiexample.com/api/v1/employees', 
-    {method: 'GET',
-     mode : 'no-cors'})
+    fetch('https://dummyjson.com/products', 
+    {method: 'GET'
+    })
     .then(response => response.json())
     .then(json => setData(json))
     .catch(error => console.error(error));
